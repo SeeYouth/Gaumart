@@ -9,7 +9,7 @@
     padding: 10px 20px;
     background-color: $secondary-text-color;
     border: 2px solid transparent;
-    border-bottom: 2px solid $main-color;
+    border-bottom: 3px solid $main-color;
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 0;
@@ -19,7 +19,7 @@
   .btnSubmit:hover {
     transition: all 0.2s ease-in-out;
     color: $main-color;
-    border-bottom: 2px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
     border-radius: 25px;
     cursor: pointer;
   }

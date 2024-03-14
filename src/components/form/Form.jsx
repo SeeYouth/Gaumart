@@ -2,6 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import BtnSubmit from "../btnSubmit/BtnSubmit";
 import Mail from "../mail/Mail";
 
 const Form = () => {
@@ -22,40 +23,52 @@ const Form = () => {
           <p>Tél: 01 45 83 78 78</p>
           <Mail />
           <Link className="linkQuote" to="/quote">
-            {" "}
-            Faire une demande de devis en ligne{" "}
+            {" "}Faire une demande de devis en ligne{" "}
           </Link>
         </div>
         <form method="post">
           <div className="containerReception">
             <div className="checkServiceType">
               <div className="checkServiceTypeText">
-                <input type="text" name="name" id="name" placeholder="NOM*" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="NOM*"
+                  required
+                />
                 <input
                   type="text"
                   name="company"
                   id="company"
                   placeholder="SOCIETE *"
+                  required
                 />
                 <input
                   type="email"
                   name="mail"
                   id="mail"
                   placeholder="EMAIL*"
+                  required
                 />
-                <input type="tel" name="phone" id="phone" placeholder="TEL" />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="TEL"
+                  required
+                />
                 <textarea
                   name="message"
                   id="message"
                   cols="30"
                   rows="10"
                   placeholder="MESSAGE*"
-                ></textarea>
-                <div className="inputSubmit">
-                  <input className="submit" type="submit" value="ENVOYER" />
-                </div>
+                  required
+                />
               </div>
             </div>
+            <BtnSubmit />
           </div>
         </form>
       </div>
