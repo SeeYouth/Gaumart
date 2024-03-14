@@ -1,0 +1,26 @@
+.containerBtnSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 0 20px 20px 20px;
+
+  .btnSubmit {
+    padding: 10px 20px;
+    background-color: $secondary-text-color;
+    border: 2px solid transparent;
+    border-bottom: 2px solid $main-color;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btnSubmit:hover {
+    transition: all 0.2s ease-in-out;
+    color: $main-color;
+    border-bottom: 2px solid $secondary-color;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+}

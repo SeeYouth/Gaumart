@@ -1,0 +1,193 @@
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+.link:hover {
+  color: $main-color;
+  text-decoration: underline;
+}
+
+.logoGaumart {
+  width: 100px;
+  height: 100px;
+  color: $main-text-color;
+}
+
+.bowtie {
+  color: $main-color;
+  transform: translateY(40%);
+}
+
+.apron {
+  transform: translateY(55%);
+}
+
+.textLogo {
+  margin: 10px 30px;
+  align-items: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: bolder;
+  h1 {
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+}
+
+main {
+  border-top: 1px solid $main-text-color;
+  border-bottom: 1px solid $main-text-color;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+input[type="checkbox"] + label,
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="radio"] + label,
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+textarea {
+  font-weight: bold;
+  border-radius: 0;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 3px solid $main-color;
+  color: $main-text-color;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+textarea {
+  background-color: rgba(0, 0, 0, 0.089);
+}
+
+input[type="date"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+input[type="time"]:hover,
+textarea:hover {
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $main-color;
+  height: 50px;
+  flex-grow: 1;
+  padding: 0 5px;
+  user-select: none;
+  font-size: 0.8em;
+}
+
+input[type="checkbox"]:hover + label,
+input[type="radio"]:hover + label {
+  border: 3px solid $secondary-color;
+  color: $main-color;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  margin: 12px 5px 0 5px;
+  padding: 0 15px;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  transition: all 0.2s ease-in-out;
+  border: 3px solid $main-color;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  color: white;
+}
+
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder,
+textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 1;
+}
+
+input[type="date"] {
+  padding: 0 10px;
+}
+
+input[type="time"] {
+  padding: 0 20px;
+}
+
+input[type="number"] {
+  padding: 0 0 0 20px;
+  width: 130px;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  border: 3px solid;
+  border-color: transparent transparent $main-color transparent;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  border-color: transparent transparent $main-color transparent;
+}
+
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+  transition: all 0.2s ease-in-out;
+  outline: 1px solid $main-color;
+  background-color: $secondary-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: $secondary-text-color;
+}
+
+.flexDirection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,126 @@
+//----- CODE TEMPORAIRE  ------//
+
+// .containerReception {
+//   border: 1px solid black;
+// }
+
+// .containerReception {
+//   margin: 5px 0;
+// }
+
+// .checkServiceType,
+// .checkServiceTypeText {
+//   margin: 5px;
+// }
+
+//----FIN CODE TEMPORAIRE------//
+
+.formQuote {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+
+  fieldset {
+    border: 2px solid $main-color-lighter;
+    margin: 30px 0;
+    padding: 10px 30px;
+  }
+  legend {
+    padding: 0 10px;
+  }
+
+  .containerReception {
+    margin-bottom: 30px;
+  }
+
+  .containerReception {
+    h4 {
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      span {
+        color: rgba(0, 0, 0, 0.562);
+        font-size: 0.7em;
+      }
+    }
+
+    .checkServiceType {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .checkServiceTypeText {
+        display: flex;
+        flex-flow: row wrap;
+        width: 200px;
+        flex-grow: 1;
+        margin: 10px;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      .inputBgColor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 0 10px;
+        font-size: 0.8em;
+        font-weight: bold;
+        input {
+          height: 50px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+
+// .containerReception,
+.formQuote {
+  width: 100%;
+}
+
+.containerSlider {
+  padding: 20px;
+  width: 100%;
+}
+
+.horizontalSlider {
+  width: 100%;
+
+  .budgetTrack {
+    top: 20px;
+    height: 10px;
+  }
+  .budgetTrack-0 {
+    background-color: rgba(0, 0, 0, 0.089);
+  }
+  .budgetTrack:hover {
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+  .budgetTrack-1 {
+    background-color: $main-color;
+  }
+  .budgetTrack-1:hover {
+    background-color: $main-color-darker;
+  }
+  .budgetTrack-2 {
+    background-color: $secondary-color;
+  }
+  .budgetTrack-2:hover {
+    background-color: $secondary-color-darker;
+  }
+
+  .budgetThumb {
+    background-color: $main-color;
+    padding: 10px;
+    color: $secondary-text-color;
+    cursor: pointer;
+  }
+
+  .budgetThumb:focus {
+    outline: 1px solid $main-color;
+    background-color: $secondary-color;
+  }
+}

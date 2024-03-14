@@ -1,0 +1,24 @@
+.navBar,
+.navBar ul,
+.textLogo {
+  display: flex;
+  flex-direction: row;
+}
+
+.navBar {
+  ul {
+    align-items: end;
+    flex-grow: 1;
+    justify-content: space-around;
+    max-width: 800px;
+    li {
+      padding: 5px;
+      margin: 10px;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.navBar {
+  justify-content: space-between;
+}
