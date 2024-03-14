@@ -1,0 +1,29 @@
+.formSubmit {
+  .formSubmit__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+
+    .congratulation {
+      text-align: center;
+      line-height: 30px;
+      max-width: 500px;
+
+      span {
+        display: inline-block;
+        font-size: 3em;
+        color: green;
+        font-weight: bolder;
+        margin-bottom: 15px;
+        padding: 20px;
+      }
+    }
+
+    pre {
+      padding: 20px;
+    }
+  }
+}

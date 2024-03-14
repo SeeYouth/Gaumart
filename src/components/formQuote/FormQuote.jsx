@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import BtnSubmit from "../btnSubmit/BtnSubmit";
 import BudgetFieldset from "./budgetFieldset/BudgetFieldset";
 import CoordinateFieldset from "./coordinateFieldset/CoordinateFieldset";
@@ -8,6 +10,7 @@ import ServiceFieldset from "./serviceFieldset/ServiceFieldset";
 import TitleCoordinateGaumart from "../titleCoordinateGaumart/TitleCoordinateGaumart";
 
 const FormQuote = () => {
+  const navigate = useNavigate();
   // Stock l'état de formData
   const [formData, setFormData] = useState({
     //Reception
@@ -137,17 +140,11 @@ const FormQuote = () => {
     e.preventDefault();
     // Validez le formulaire
     if (validateForm()) {
-      localStorage.setItem("devisFormData", JSON.stringify(formData));
-      const openJsonInNewTab = () => {
-        const newWindow = window.open();
-        newWindow.document.title = "FormData JSON";
-        newWindow.document.body.innerHTML = `<pre>${JSON.stringify(
-          formData,
-          null,
-          2
-        )}</pre>`;
-      };
-      openJsonInNewTab();
+      navigate("/devis", {
+        state: {
+          formData
+        }
+      });
     } else {
       console.log("Le formulaire est invalide, afficher un message d'erreur.");
     }
